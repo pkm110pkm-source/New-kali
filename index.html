@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberX Dashboard</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <div class="user-profile">
+                <div class="avatar" id="user-initial">U</div>
+                <div class="info">
+                    <h3 id="user-name">User</h3>
+                    <span id="user-level">Level 1 • Free</span>
+                </div>
+            </div>
+            <div class="status-badge" id="status-pill">Inactive</div>
+        </header>
+
+        <main>
+            <div class="balance-section">
+                <p>TOTAL BALANCE</p>
+                <h1 id="balance-amount">$0.00</h1>
+            </div>
+
+            <div class="actions">
+                <button onclick="tg.close()">📥 Deposit</button>
+                <button onclick="tg.close()">📤 Withdraw</button>
+            </div>
+
+            <div class="ai-section">
+                <h3>CyberX AI Assistant</h3>
+                <div class="chat-input">
+                    <input type="text" id="ai-msg" placeholder="Ask anything...">
+                    <button onclick="askAI()">Send</button>
+                </div>
+                <p id="ai-response" class="ai-reply"></p>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

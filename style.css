@@ -1,0 +1,12 @@
+:root { --neon: #00f3ff; --bg: #050b14; --card: #0f172a; }
+body { background: var(--bg); color: white; font-family: 'Segoe UI', sans-serif; margin: 0; padding: 15px; }
+.app-container { max-width: 500px; margin: auto; }
+header { display: flex; justify-content: space-between; align-items: center; padding: 10px 0; border-bottom: 1px solid #1e293b; }
+.avatar { width: 40px; height: 40px; background: var(--neon); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: black; font-weight: bold; }
+.balance-section { background: linear-gradient(135deg, rgba(0,243,255,0.2), rgba(0,81,255,0.1)); padding: 30px; border-radius: 20px; border: 1px solid rgba(0,243,255,0.3); text-align: center; margin: 20px 0; }
+#balance-amount { font-size: 40px; margin: 10px 0; color: var(--neon); text-shadow: 0 0 10px rgba(0,243,255,0.5); }
+.actions { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+button { background: var(--card); border: 1px solid #1e293b; color: white; padding: 12px; border-radius: 10px; cursor: pointer; }
+.ai-section { margin-top: 30px; background: var(--card); padding: 15px; border-radius: 15px; }
+input { background: #050b14; border: 1px solid #1e293b; color: white; padding: 10px; width: 70%; border-radius: 5px; }
+.ai-reply { font-size: 13px; color: #94a3b8; margin-top: 10px; }
