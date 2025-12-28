@@ -4,7 +4,7 @@ tg.expand();
 const user = tg.initDataUnsafe.user;
 
 // IMPORTANT: Niche wo link dalna jo Ngrok se milega
-const API_URL = "http://localhost:8000"; 
+const API_URL = "https://pally-unrefractively-shanell.ngrok-free.dev -> http://localhost:8000; 
 
 async function loadUserData() {
     if(!user) return;
